@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-19 01:25:29 AM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMTk7MTI6NDE6MzAgQU07Mjg2MA=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMTk7MDE6MjU6MjkgQU07MTsyOTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="boy, kilo, vki" type="Real" array="False" size=""/>
+            <assign variable="boy" expression="0"/>
+            <assign variable="kilo" expression="0"/>
+            <assign variable="vki" expression="0"/>
+            <output expression="&quot;Boyunuzu giriniz&quot;" newline="True"/>
+            <input variable="boy"/>
+            <output expression="&quot;Kilonuzu giriniz&quot;" newline="True"/>
+            <input variable="kilo"/>
+            <assign variable="vki" expression="kilo/(boy^2)"/>
+            <output expression="&quot;V&#252;cut k&#252;tle endeksiniz hesaplanm&#305;&#351;t&#305;r&quot; &amp; vki" newline="True"/>
+            <if expression="vki&gt;=30">
+                <then>
+                    <output expression="&quot;Kilonuz ideal kilonun &#231;ok &#252;zerinde. Sa&#287;l&#305;&#287;&#305;n&#305;z i&#231;in l&#252;tfen bir diyetisyene gidiniz&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="vki&gt;25 &amp;&amp; vki&lt;30">
+                        <then>
+                            <output expression="&quot;Kilonuz ideal kilonun &#252;zerinde. Sa&#287;l&#305;&#287;&#305;n&#305;z i&#231;in sa&#287;l&#305;kl&#305; bir &#351;ekilde kilo veriniz&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="vki&gt;=18.5 &amp;&amp; vki&lt;25">
+                                <then>
+                                    <output expression="&quot;&#304;deal kilodas&#305;n&#305;z&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="vki&lt;=18.49">
+                                        <then>
+                                            <output expression="&quot;Kilonuz ideal kilonun alt&#305;nda. Sa&#287;l&#305;&#287;&#305;n&#305;z i&#231;in sa&#287;l&#305;kl&#305; bir &#351;ekilde kilo al&#305;n&#305;z&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 02:23:03 AM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjU7MDI6MjA6NDYgQU07Mjg2MA=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjU7MDI6MjM6MDMgQU07MTsyOTY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <output expression="&quot;Bir sayi giriniz&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <if expression="sayi&gt;0">
+                <then>
+                    <output expression="&quot;Sayi pozitif&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sayi=0">
+                        <then>
+                            <output expression="&quot;Sayi sifir&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sayi negatif&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

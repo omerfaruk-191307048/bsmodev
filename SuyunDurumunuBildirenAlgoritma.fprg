@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-09 09:38:23 PM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMDk7MDQ6MzE6MDAgUE07Mjg3MQ=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMDk7MDk6Mzg6MjMgUE07MjsyOTk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s&#305;cakl&#305;k" type="Integer" array="False" size=""/>
+            <assign variable="s&#305;cakl&#305;k" expression="0"/>
+            <output expression="&quot;L&#252;tfen derece giriniz&quot;" newline="True"/>
+            <input variable="s&#305;cakl&#305;k"/>
+            <if expression="S&#305;cakl&#305;k&gt;=100">
+                <then>
+                    <output expression="&quot;Buhar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="S&#305;cakl&#305;k&lt;=0">
+                        <then>
+                            <output expression="&quot;Buz&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;S&#305;v&#305;&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

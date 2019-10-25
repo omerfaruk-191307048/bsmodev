@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-12 07:55:10 PM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMTI7MDc6MjY6NTIgUE07Mjg3OQ=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMTI7MDc6NTU6MTAgUE07MTsyOTgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Number, Password" type="Integer" array="False" size=""/>
+            <assign variable="Number" expression="191307048"/>
+            <assign variable="Password" expression="123456789"/>
+            <output expression="&quot;L&#252;tfen &#246;&#287;renci numaran&#305;z&#305; giriniz&quot;" newline="True"/>
+            <input variable="Number"/>
+            <do expression="Number!=191307048">
+                <output expression="&quot;&#214;&#287;renci numaran&#305;z&#305; yanl&#305;&#351; girdiniz. L&#252;tfen, &#246;&#287;renci numaran&#305;z&#305; do&#287;ru bir &#351;ekilde tekrar giriniz&quot;" newline="True"/>
+                <input variable="Number"/>
+                <if expression="Number=191307048">
+                    <then/>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;L&#252;tfen &#351;ifrenizi giriniz&quot;" newline="True"/>
+            <input variable="Password"/>
+            <do expression="Password!=123456789">
+                <output expression="&quot;&#350;ifrenizi yanl&#305;&#351; girdiniz. L&#252;tfen, &#351;ifrenizi do&#287;ru bir &#351;ekilde tekrar giriniz&quot;" newline="True"/>
+                <input variable="Password"/>
+                <if expression="Password=123456789">
+                    <then/>
+                    <else/>
+                </if>
+            </do>
+            <output expression="&quot;Sisteme girdiniz&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

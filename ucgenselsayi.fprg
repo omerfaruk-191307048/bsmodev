@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-23 12:26:08 PM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjM7MTE6NDE6MDkgQU07Mjg2MA=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjM7MTI6MjY6MDggUE07MjsyOTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, n" type="Integer" array="False" size=""/>
+            <assign variable="sayi" expression="0"/>
+            <assign variable="n" expression="0"/>
+            <output expression="&quot;Bir sayi gir&quot;" newline="True"/>
+            <input variable="sayi"/>
+            <while expression="sayi&lt;=0">
+                <output expression="&quot;Pozitif sayi giriniz&quot;" newline="True"/>
+                <input variable="sayi"/>
+            </while>
+            <while expression="sayi&gt;n*((n+1)/2)">
+                <assign variable="n" expression="n+1"/>
+                <if expression="n*((n+1)/2)&gt;sayi">
+                    <then>
+                        <output expression="&quot;Girdiginiz sayi ucgensel sayi degildir&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="n*((n+1)/2)=sayi">
+                            <then>
+                                <output expression="&quot;Girdiginiz sayi ucgensel sayidir&quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

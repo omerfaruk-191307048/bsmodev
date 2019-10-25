@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="faruk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 02:40:35 AM"/>
+        <attribute name="created" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjU7MDE6NTU6NDkgQU07Mjg3MA=="/>
+        <attribute name="edited" value="ZmFydWs7TEFQVE9QLVVQNlQ2M0FOOzIwMTktMTAtMjU7MDI6NDA6MzUgQU07MjsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, sayi" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <output expression="&quot;a sayisini giriniz&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;b sayisini giriniz&quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a&lt;b">
+                <then>
+                    <output expression="&quot;b sayisi a sayisindan buyuktur&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="b&lt;a">
+                        <then>
+                            <output expression="&quot;a sayisi b sayisindan buyuktur&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;a ve b birbirine esittir&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
